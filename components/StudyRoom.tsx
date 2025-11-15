@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 // Fix: Import types from agora-rtc-sdk-ng to resolve namespace errors.
-import AgoraRTC, { IAgoraRTCClient, ICameraVideoTrack, IMicrophoneAudioTrack, IRemoteUser } from 'agora-rtc-sdk-ng';
+// Fix: Split value and type imports to resolve module resolution error for IRemoteUser.
+// Fix: Import IRemoteUser as a value since it seems to be a class, not an interface.
+import AgoraRTC, { IRemoteUser } from 'agora-rtc-sdk-ng';
+import type { IAgoraRTCClient, ICameraVideoTrack, IMicrophoneAudioTrack } from 'agora-rtc-sdk-ng';
 import { VideoPlayer } from './VideoPlayer';
 import { AIBot } from './AIBot';
 
