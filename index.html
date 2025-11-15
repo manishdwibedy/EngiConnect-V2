@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EngiConnect - Collaborative Engineering Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Simple scrollbar styling for a cleaner look in dark mode */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a202c; /* gray-900 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* gray-700 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* gray-600 */
+        }
+        .prose { max-width: 100%; }
+        .prose code { color: #ecc94b; }
+        .prose pre {
+            color: #d1d5db;
+            background-color: #1f2937;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "agora-rtc-sdk-ng": "https://download.agora.io/sdk/release/AgoraRTC_N-4.20.2.js"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "description": "EngiConnect: A collaborative learning platform for engineering students, unifying real-time communication with highly accurate, grounded generative AI problem-solving.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "name": "EngiConnect"
+}
